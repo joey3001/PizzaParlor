@@ -8,13 +8,21 @@ Pizza.prototype.addToppings = function (toppings) {
   this.toppings = toppings;
 }
 
+Pizza.prototype.costCalculator = function(){
+  return this.cost; 
+}
+
 let newPizza = new Pizza ("large");
 
 let array = ["mushrooms","onions","apples"];
 
 newPizza.addToppings(array);
 
-console.log(newPizza.toppings);
+let baseCost = newPizza.costCalculator(); 
+alert(baseCost);
+alert(newPizza.cost);
+
+
 
 
 
