@@ -17,11 +17,12 @@ Pizza.prototype.costCalculator = function(){
   }
   return this.cost; 
 }
-alert("h3");
+
 $(document).ready(function() {
   $("#pizzaCost").submit(function(event) {
-    alert("h1");
     event.preventDefault();
-    alert("h1");
+    let size = $("#size").val()
+    let newPizza = new Pizza(size);
+    console.log(newPizza);
   });
 });
