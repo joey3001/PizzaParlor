@@ -30,3 +30,13 @@
 // Code: newPizza.costCalculator()
 // Code: let result = newPizza.cost
 // Expect: result.toEqual(baseCost + 5)
+
+// Test: Should add 5 to Pizza.cost if length(Pizza.toppings) > 1
+// Code: let exampleSize = "small"
+// Code: let newPizza = new Pizza(exampleSize)
+// Code: let exampleToppings = ["mushrooms","onions","cheese"]
+// Code: newPizza.addToppings(exampleToppings)
+// Code: let baseCost = newPizza.cost;
+// Code: newPizza.costCalculator()
+// Code: let result = newPizza.cost
+// Expect: result.toEqual(baseCost + 5)
