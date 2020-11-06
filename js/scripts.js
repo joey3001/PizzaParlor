@@ -33,5 +33,7 @@ $(document).ready(function() {
     let toppings = []
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
+    newPizza.costCalculator();
+    $(".output").text("Your Pizza Costs : " + newPizza.cost);
   });
 });
