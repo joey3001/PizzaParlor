@@ -1,7 +1,7 @@
 function Pizza (size) {
   this.size = size; 
   this.toppings = []; 
-  this.cost = 0; 
+  this.cost = 5; 
 }
 
 Pizza.prototype.addToppings = function (toppings) {
@@ -9,17 +9,21 @@ Pizza.prototype.addToppings = function (toppings) {
 }
 
 Pizza.prototype.costCalculator = function(){
+  if (this.size === "large") {
+    this.cost += 5; 
+  }
   return this.cost; 
 }
 
-let newPizza = new Pizza ("large");
+let newPizza = new Pizza("large");
 
 let array = ["mushrooms","onions","apples"];
 
 newPizza.addToppings(array);
 
-let baseCost = newPizza.costCalculator(); 
-alert(baseCost);
+let newCost = newPizza.costCalculator();
+alert(newCost);
+
 
 
 
