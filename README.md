@@ -10,7 +10,7 @@
 | Test | Input | Output |
 | :--------------------------- | :------------------------| :---------------- | 
 | Pizza |||
-| :--------------------------- | :------------------------| :---------------- | 
+| Should correctly create an instance of Pizza | "large" | "large" | 
 
 
 ## Setup/Installation Requirements
