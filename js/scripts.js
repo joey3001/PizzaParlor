@@ -24,6 +24,10 @@ function toppingsArray(toppings) {
   });
 };
 
+function totalFade(pizzaObject) {
+  $("#pizzaCost").text(pizzaObject.cost).fadeIn();
+}
+
 $(document).ready(function() {
   $("#pizzaOrder").submit(function(event) {
     event.preventDefault();
@@ -33,9 +37,9 @@ $(document).ready(function() {
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
-    $("#pizzaCost, img").hide();
-    $("#pizzaCost").text(newPizza.cost);
-    $("#pizzaCost").fadeIn("slow");
-    $("img").fadeIn("slow");
+    $("#pizzaCost, img").fadeOut("slow", function() {
+      $("#pizzaCost").text(newPizza.cost).fadeIn();
+      $("img").fadeIn();
+    });
   });
 });
