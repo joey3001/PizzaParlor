@@ -12,9 +12,10 @@
 | Pizza |||
 | Should correctly create an instance of Pizza | "large" | "large" | 
 | addToppings|||
-| Should correctly add toppings to an instance of pizza | ["mushrooms","onions","Cheese] | ["mushrooms","onions","Cheese]| 
+| Should correctly add toppings to an instance of Pizza | ["mushrooms","onions","Cheese] | ["mushrooms","onions","Cheese]| 
 | costCalculator|||
-| Should return the base cost of the pizza | n/a | 5 | 
+| Should return Pizza.cost | n/a | 5 | 
+| Should add 5 to Pizza.cost if Pizza.size = "large" | Pizza.size="large" | 10 | 
 
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
