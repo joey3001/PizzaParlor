@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(233, 199, 127);
+}
+
+h2 {
+  text-align: center;
+}
+
+.smallLineBreak {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-control {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: rgba(241, 161, 124, 0.959);
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  border: solid black;
+  border-width: 2px;
+}
