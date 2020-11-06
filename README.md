@@ -16,6 +16,7 @@
 | costCalculator|||
 | Should return Pizza.cost | n/a | 5 | 
 | Should add 5 to Pizza.cost if Pizza.size = "large" | Pizza.size="large" | 10 | 
+| Should add 5 to Pizza.cost if length(Pizza.toppings) > 1 | Pizza.toppings > 1 | 10 | 
 
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
