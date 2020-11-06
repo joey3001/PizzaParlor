@@ -31,7 +31,7 @@
 // Code: let result = newPizza.cost
 // Expect: result.toEqual(baseCost + 5)
 
-// Test: Should add 5 to Pizza.cost if length(Pizza.toppings) > 1
+// Test: Should add 5 to Pizza.cost if Pizza.toppings.length > 1
 // Code: let exampleSize = "small"
 // Code: let newPizza = new Pizza(exampleSize)
 // Code: let exampleToppings = ["mushrooms","onions","cheese"]
