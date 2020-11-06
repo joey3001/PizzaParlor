@@ -15,10 +15,18 @@
 // Expect: result.toEqual(["mushrooms","onions","cheese"])
 
 // Describe: costCalculator
-// Test: Should return the base cost of the pizza
-// Code: let exampleSize = "large"
+// Test: Should return the base cost of the pizza object
+// Code: let exampleSize = "small"
 // Code: let newPizza = new Pizza(exampleSize)
 // Code: let baseCost = newPizza.cost;
 // Code: newPizza.costCalculator()
 // Code: let result = newPizza.cost
 // Expect: result.toEqual(baseCost)
+
+// Test: Should add 5$ to the base cost of the pizza object if the pizza object's size is large
+// Code: let exampleSize = "large"
+// Code: let newPizza = new Pizza(exampleSize)
+// Code: let baseCost = newPizza.cost;
+// Code: newPizza.costCalculator()
+// Code: let result = newPizza.cost
+// Expect: result.toEqual(baseCost + 5)

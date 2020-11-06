@@ -20,7 +20,7 @@ newPizza.addToppings(array);
 
 let baseCost = newPizza.costCalculator(); 
 alert(baseCost);
-alert(newPizza.cost);
+
 
 
 
