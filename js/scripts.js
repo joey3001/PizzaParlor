@@ -33,9 +33,9 @@ $(document).ready(function() {
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
-    $("#pizzaCost, img").hide("");
-    $("#pizzaCost").text("Your Pizza Costs : " + newPizza.cost + "$");
-    $("#pizzaCost").fadeIn();
+    $("#pizzaCost, img").hide();
+    $("#pizzaCost").text(newPizza.cost);
+    $("#pizzaCost").fadeIn("slow");
     $("img").fadeIn("slow");
   });
 });
