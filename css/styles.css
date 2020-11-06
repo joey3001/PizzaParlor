@@ -18,8 +18,22 @@ h2 {
 .btn {
   background-color: rgba(241, 161, 124, 0.959);
   margin-top: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 15px;
   font-weight: bold;
   border: solid black;
   border-width: 2px;
+}
+
+#pizzaCost {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+img {
+  margin: auto; 
+  margin-bottom: 30px;
+  width: 25%;
+  height:auto;
+  display:none;
 }

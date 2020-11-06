@@ -10,7 +10,7 @@
 <body>
   <div class="container">
   <h2>Welcome to Joe's Pizza Shop</h2>
-    <form id="pizzaCost">
+    <form id="pizzaOrder">
       <p class="smallLineBreak">1. Please select what size pizza you'd like to order</p>
       <select class="form-control" id="size" required>
         <option value="">Pizza Size Options</option>
@@ -24,9 +24,9 @@
       <input type="checkbox" name="toppings" value="Spinach"> Spinach<br>
       <input type="checkbox" name="toppings" value="Broccoli"> Broccoli<br>
       <input type="checkbox" name="toppings" value="Ranch"> Ranch Dressing<br>
-      <button class="btn">Submit your order!</btn>
+      <button class="btn">Submit your order!</button>
     </form>
-    <div class="output">
-    </div>
+    <p id="pizzaCost"></P>
+    <img src="img/pizza.png" alt="Looks delicious!">
   </div>
 </body>

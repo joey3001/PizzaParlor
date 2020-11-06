@@ -24,9 +24,8 @@ function toppingsArray(toppings) {
   });
 };
 
-
 $(document).ready(function() {
-  $("#pizzaCost").submit(function(event) {
+  $("#pizzaOrder").submit(function(event) {
     event.preventDefault();
     let size = $("#size").val()
     let newPizza = new Pizza(size);
@@ -34,6 +33,9 @@ $(document).ready(function() {
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
-    $(".output").text("Your Pizza Costs : " + newPizza.cost);
+    $("#pizzaCost, img").hide("");
+    $("#pizzaCost").text("Your Pizza Costs : " + newPizza.cost + "$");
+    $("#pizzaCost").fadeIn();
+    $("img").fadeIn("slow");
   });
 });
