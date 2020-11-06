@@ -37,9 +37,11 @@ $(document).ready(function() {
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
-    $("#pizzaCost, img").fadeOut("slow", function() {
-      $("#pizzaCost").text(newPizza.cost).fadeIn();
-      $("img").fadeIn();
+    $("#pizzaCost").fadeOut("slow", function() {
+      $(this).text(newPizza.cost).fadeIn("slow");
+    });
+    $("img").fadeOut("slow", function() {
+      $(this).fadeIn("slow");
     });
   });
 });
