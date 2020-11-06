@@ -43,6 +43,6 @@
 
 // Describe: toppingsArray
 // Test: Should enter checkbox values into an array
-// Code: let toppings = []
-// Code: let result = toppingsArray(toppings)
+// Code: let result = []
+// Code: toppingsArray(result)
 // Expect: result.toEqual([checked value 1, checked value 2, checked value 3.....])
