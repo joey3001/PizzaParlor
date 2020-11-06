@@ -13,8 +13,9 @@ Pizza.prototype.costCalculator = function(){
     this.cost += 5; 
   }
   if (this.toppings.length > 1) {
-  return this.cost; 
+    this.cost += 5; 
   }
+  return this.cost; 
 }
 
 let newPizza = new Pizza("large");
