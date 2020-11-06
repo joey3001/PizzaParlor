@@ -33,7 +33,5 @@ $(document).ready(function() {
     let toppings = []
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
-    console.log(toppings);
-    console.log(newPizza);
   });
 });
