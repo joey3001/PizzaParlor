@@ -18,7 +18,7 @@
 | Should add 5 to Pizza.cost if Pizza.size = "large" | Pizza.size="large" | 10 | 
 | Should add 5 to Pizza.cost if Pizza.toppings.length > 1 | Pizza.toppings.length > 1 | 10 | 
 | toppingsArray|||
-| Should create an array populated with all of the checked values for toppings | [] | [checked value 1, checked value 2, checked value 3.....]| 
+| Should populate an array with all of the checked values for toppings | [] | [checked value 1, checked value 2, checked value 3.....]| 
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
 
