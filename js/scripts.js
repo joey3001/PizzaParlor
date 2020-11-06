@@ -17,14 +17,11 @@ Pizza.prototype.costCalculator = function(){
   }
   return this.cost; 
 }
-
-let newPizza = new Pizza("large");
-
-let array = ["mushrooms","onions","apples"];
-
-newPizza.addToppings(array);
-
-let newCost = newPizza.costCalculator();
-alert(newCost);
-
-alert(newPizza.toppings.length);
+alert("h3");
+$(document).ready(function() {
+  $("#pizzaCost").submit(function(event) {
+    alert("h1");
+    event.preventDefault();
+    alert("h1");
+  });
+});
