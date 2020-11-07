@@ -2,7 +2,7 @@ body {
   background-color: rgb(233, 199, 127);
 }
 
-#primaryHeader {
+h2 {
   text-align: center;
   background-color:  rgba(240, 133, 84, 0.959);
   width: 75%;
