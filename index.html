@@ -9,27 +9,33 @@
 </head>
 <body>
   <div class="container">
-  <h2 id="primaryHeader">Welcome to Joe's Pizza Shop</h2>
-  <h5>We have a great deal right now! any small 1 topping pizza is only 5 Dollars!</h6>
-  <h5>Want toppings? Have as many extra toppings as you want for only 5 Dollars More!</h6>
-  <h5>Want to upgrade to a large? That's only an additional 5 Dollars!</h6>
-    <form id="pizzaOrder">
-      <p class="smallLineBreak">1. Please select what size pizza you'd like to order</p>
-      <select class="form-control" id="size" required>
-        <option value="">Pizza Size Options</option>
-        <option value="Small">Small</option>
-        <option value="Large">Large</option>
-      </select>
-      <p class="smallLineBreak">1. Please select the toppings you'd like on your pizza.</p>
-      <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
-      <input type="checkbox" name="toppings" value="Onions"> Onions<br>
-      <input type="checkbox" name="toppings" value="ExtraCheese"> Extra Cheese<br>
-      <input type="checkbox" name="toppings" value="Spinach"> Spinach<br>
-      <input type="checkbox" name="toppings" value="Broccoli"> Broccoli<br>
-      <input type="checkbox" name="toppings" value="Ranch"> Ranch Dressing<br>
-      <button class="btn">Submit your order!</button>
-    </form>
-    <p id="pizzaCost"></P>
-    <img src="img/pizza.png" alt="Looks delicious!">
+    <h2 id="primaryHeader">Welcome to Joe's Pizza Shop</h2>
+    <h5>We have a great deal right now! any small 1 topping pizza is only 5 Dollars!</h6>
+    <h5>Want toppings? Have as many extra toppings as you want for only 5 Dollars More!</h6>
+    <h5>Want to upgrade to a large? That's only an additional 5 Dollars!</h6>
+    <div class="row">
+      <div class="col-8">
+        <form id="pizzaOrder">
+          <p class="smallLineBreak">1. Please select what size pizza you'd like to order</p>
+          <select class="form-control" id="size" required>
+            <option value="">Pizza Size Options</option>
+            <option value="Small">Small</option>
+            <option value="Large">Large</option>
+          </select>
+          <p class="smallLineBreak">1. Please select the toppings you'd like on your pizza.</p>
+          <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
+          <input type="checkbox" name="toppings" value="Onions"> Onions<br>
+          <input type="checkbox" name="toppings" value="ExtraCheese"> Extra Cheese<br>
+          <input type="checkbox" name="toppings" value="Spinach"> Spinach<br>
+          <input type="checkbox" name="toppings" value="Broccoli"> Broccoli<br>
+          <input type="checkbox" name="toppings" value="Ranch"> Ranch Dressing<br>
+          <button class="btn">Submit your order!</button>
+        </form>
+      </div>
+      <div class="col-4">
+        <p id="pizzaCost"></P>
+        <img src="img/pizza.png" alt="Looks delicious!">
+      </div>
+    </div>
   </div>
 </body>
