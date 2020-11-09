@@ -24,20 +24,22 @@ function toppingsArray(toppings) {
   });
 }
 
+function fadeFunction(selector, pizzaObject) {
+  return function () {
+    $(selector).text("Your Pizza costs: " + pizzaObject.cost + "$").fadeIn("slow");
+  }
+}
+
 $(document).ready(function() {
   $("#pizzaOrder").submit(function(event) {
     event.preventDefault();
-    let size = $("#size").val()
+    let size = $("#size").val();
     let newPizza = new Pizza(size);
-    let toppings = []
+    let toppings = [];
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
-    $("#pizzaCost").fadeOut("slow", function() {
-      $(this).text("Your Pizza costs: " + newPizza.cost + "$").fadeIn("slow");
-    });
-    $("img").fadeOut("slow", function() {
-      $(this).fadeIn("slow");
-    });
+    $("#pizzaCost").fadeOut("slow", fadeFunction("#pizzaCost", newPizza));
+    $("img").fadeOut("slow", fadeFunction("img", ""));
   });
 });
