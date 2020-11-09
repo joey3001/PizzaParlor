@@ -59,3 +59,11 @@
     $(selector).text(pizzaObject.cost).fadeIn();
   })
 */
+
+// Test: If the selector is an image, a function that executes the fadeIn method on the image should be returned.
+// Code: let selector = "img"
+// Code: let result = fadeFunction(selector, pizzaObject);
+/* Expect: result.toEqual( ƒ () {
+    $(selector).fadeIn();
+  })
+*/
