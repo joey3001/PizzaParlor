@@ -1,13 +1,24 @@
-// Describe: Pizza(size)
+// Describe: Pizza()
 // Test: Should correctly create an instance of Pizza
-// Code: let exampleSize = "large"
+// Code: let newPizza = new Pizza()
+// Code: let result = typeof(newPizza) 
+// Expect: result.toEqual(object)
+
+// Test: Should correctly create an instance of Pizza with input being provided to determine the size of the Pizza
+// Code: let exampleSize = "Large"
 // Code: let newPizza = new Pizza(exampleSize)
 // Code: let result = Pizza.size
-// Expect: result.toEqual("large")
+// Expect: result.toEqual("Large")
+
+// Describe: toppingsArray
+// Test: Should enter checked checkbox values into an array
+// Code: let result = []
+// Code: toppingsArray(result)
+// Expect: result.toEqual([checked value 1, checked value 2, checked value 3...])
 
 // Describe: addToppings(toppings)
 // Test: Should correctly add toppings to an instance of Pizza
-// Code: let exampleSize = "large"
+// Code: let exampleSize = "Large"
 // Code: let exampleToppings = ["mushrooms","onions","cheese"]
 // Code: let newPizza = new Pizza(exampleSize)
 // Code: newPizza.addToppings(exampleToppings)
@@ -16,15 +27,15 @@
 
 // Describe: costCalculator
 // Test: Should return Pizza.cost
-// Code: let exampleSize = "small"
+// Code: let exampleSize = "Small"
 // Code: let newPizza = new Pizza(exampleSize)
 // Code: let baseCost = newPizza.cost;
 // Code: newPizza.costCalculator()
 // Code: let result = newPizza.cost
 // Expect: result.toEqual(baseCost)
 
-// Test: Should add 5 to Pizza.cost if Pizza.size = "large"
-// Code: let exampleSize = "large"
+// Test: Should add 5 to Pizza.cost if Pizza.size = "Large"
+// Code: let exampleSize = "Large"
 // Code: let newPizza = new Pizza(exampleSize)
 // Code: let baseCost = newPizza.cost;
 // Code: newPizza.costCalculator()
@@ -41,16 +52,10 @@
 // Code: let result = newPizza.cost
 // Expect: result.toEqual(baseCost + 5)
 
-// Describe: toppingsArray
-// Test: Should enter checkbox values into an array
-// Code: let result = []
-// Code: toppingsArray(result)
-// Expect: result.toEqual([checked value 1, checked value 2, checked value 3.....])
-
 // Describe: fadeFunction
 // Test: Should return a function that executes the fadeIn method on text associated with a specified selector & object.  
 // Code: let result = totalFade(selector, pizzaObject);
-/* Expect: console.log(result).toEqual( ƒ () {
+/* Expect: result.toEqual( ƒ () {
     $(selector).text(pizzaObject.cost).fadeIn();
   })
 */
