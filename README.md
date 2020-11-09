@@ -9,10 +9,10 @@
 This application will take user input through a form and generate unique responses based on that input. Checkboxes are used within the form to help gather user input. The user input is then used to create an object, and the values of the object's keys are updated with prototypes based on user input. Ultimately, this application will generate the cost of a pizza based on the user's input of toppings & pizza size. Test specs are listed in the table below. More detailed test specs can be found at the following location: tests/scripts.test.js. 
 
 | Test | Input | Output |
-| :--------------------------- | :------------------------| :---------------- | 
+| :--------------------------- | :--------------------------------- | :---------------- | 
 | Pizza|||
 | Should correctly create an instance of Pizza | let newPizza = new Pizza() | typeof(newPizza) = object | 
-| Should correctly create an instance of Pizza with input being provided to determine the size of the Pizza | let newPizza = new Pizza("Large") \ newPizza.size = "Large" | 
+| Should correctly create an instance of Pizza with input being provided to determine the size of the Pizza | let newPizza = new Pizza("Large") | newPizza.size = "Large" | 
 | toppingsArray|||
 | Should populate an array with all of the checked values for toppings | toppingsVar = [] | toppingsVar = [checked value 1, checked value 2, checked value 3...]| 
 | addToppings |||
