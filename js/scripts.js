@@ -26,7 +26,12 @@ function toppingsArray(toppings) {
 
 function fadeFunction(selector, pizzaObject) {
   return function() {
-    $(selector).text("Your Pizza costs: " + pizzaObject.cost + "$").fadeIn("slow");
+    if (selector === "img") {
+      $(selector).fadeIn("slow");
+    }
+    else {
+      $(selector).text("Your Pizza costs: " + pizzaObject.cost + "$").fadeIn("slow");
+    }
   }
 }
 
