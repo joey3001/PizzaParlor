@@ -6,21 +6,23 @@
 
 ### Description
 
-This application will take user input through a form and generate unique responses based on that input. Checkboxes are used within the form to help gather user input. The user input is then used to create an object, and the values of the object's keys are updated with prototypes based on user input. Ultimately, this application will generate the cost of a pizza based on the user's input of toppings & pizza size. 
+This application will take user input through a form and generate unique responses based on that input. Checkboxes are used within the form to help gather user input. The user input is then used to create an object, and the values of the object's keys are updated with prototypes based on user input. Ultimately, this application will generate the cost of a pizza based on the user's input of toppings & pizza size. Test specs are listed in the table below. More detailed test specs can be found at the following location: tests/scripts.test.js. 
 
+1. Code Oriented Test Specs 
 | Test | Input | Output |
 | :--------------------------- | :------------------------| :---------------- | 
 | Pizza |||
-| Should correctly create an instance of Pizza with the user providing input for Pizza.size | "large" | Pizza.size = "large" | 
+| Should correctly create an instance of Pizza | let newPizza = new Pizza() | typeof(newPizza) = object | 
+| Should correctly create an instance of Pizza with input being provided to determine the size of the Pizza | let newPizza = new Pizza("Large") | newPizza.size = "Large" | 
 | toppingsArray|||
-| Should populate an array with all of the checked values for toppings | toppingsVar = [] | toppingsVar = [checked value 1, checked value 2, checked value 3.....]| 
-| addToppings|||
-| Should correctly add toppings to an instance of Pizza | toppingsVar | Pizza.toppings = [checked value 1, checked value 2, checked value 3.....]| 
-| costCalculator|||
-| Should return Pizza.cost | n/a | 5 | 
-| Should add 5 to Pizza.cost if Pizza.size = "large" | Pizza.size="large" | 10 | 
-| Should add 5 to Pizza.cost if Pizza.toppings.length > 1 | Pizza.toppings.length > 1 | 10 | 
-| fadeFunction|||
+| Should populate an array with all of the checked values for toppings | toppingsVar = [] | toppingsVar = [checked value 1, checked value 2, checked value 3...]| 
+| addToppings |||
+| Should correctly add the toppings array to an instance of Pizza | toppingsVar | newPizza.toppings = [checked value 1, checked value 2, checked value 3.....]| 
+| costCalculator |||
+| Should return the cost of the Pizza | n/a | 5 | 
+| Should add 5 to the cost of the Pizza if the size of the Pizza is "Large" | newPizza.size="Large" | 10 | 
+| Should add 5 to the cost of the Pizza if more than 1 topping is selected | newPizza.toppings.length > 1 | 10 | 
+| fadeFunction |||
 | Should return a function that executes the fadeIn method on text associated with a specified selector & object. | selector, pizzaObject | ƒ () { $(selector).text(pizzaObject.cost).fadeIn(); }) |
 
 ## Setup/Installation Requirements
