@@ -22,10 +22,6 @@ function toppingsArray(toppings) {
   $("input:checkbox[name=toppings]:checked").each(function() {
   toppings.push($(this).val());
   });
-};
-
-function totalFade(pizzaObject) {
-  $("#pizzaCost").text(pizzaObject.cost).fadeIn();
 }
 
 $(document).ready(function() {
@@ -38,7 +34,7 @@ $(document).ready(function() {
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
     $("#pizzaCost").fadeOut("slow", function() {
-      $(this).text("Your Pizza Cost is : " + newPizza.cost + "$").fadeIn("slow");
+      $(this).text("Your Pizza costs: " + newPizza.cost + "$").fadeIn("slow");
     });
     $("img").fadeOut("slow", function() {
       $(this).fadeIn("slow");

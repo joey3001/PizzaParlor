@@ -46,3 +46,11 @@
 // Code: let result = []
 // Code: toppingsArray(result)
 // Expect: result.toEqual([checked value 1, checked value 2, checked value 3.....])
+
+// Describe: totalFade
+// Test: Should return a function that executes the fadeIn method on text associated with a specified selector & object.  
+// Code: let result = totalFade(selector, pizzaObject);
+/* Expect: console.log(result).toEqual( ƒ () {
+    $(selector).text(pizzaObject.cost).fadeIn();
+  })
+*/
