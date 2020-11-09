@@ -23,6 +23,7 @@ This application will take user input through a form and generate unique respons
 | Should add 5 to the cost of the Pizza if more than 1 topping is selected | newPizza.toppings.length > 1 | 10 | 
 | fadeFunction |||
 | Should return a function that executes the fadeIn method on text associated with a specified selector & object. | selector, pizzaObject | ƒ () { $(selector).text(pizzaObject.cost).fadeIn(); } |
+| If the selector is an image, a function that executes the fadeIn method on the image should be returned. | selector = "img" | ƒ () { $(selector).fadeIn(); } |
 
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
