@@ -1,14 +1,14 @@
-function Pizza (size) {
+function Pizza(size) {
   this.size = size; 
   this.toppings = []; 
   this.cost = 5; 
 }
 
-Pizza.prototype.addToppings = function (toppings) {
+Pizza.prototype.addToppings = function(toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.costCalculator = function(){
+Pizza.prototype.costCalculator = function() {
   if (this.size === "Large") {
     this.cost += 5; 
   }
@@ -20,12 +20,12 @@ Pizza.prototype.costCalculator = function(){
 
 function toppingsArray(toppings) {
   $("input:checkbox[name=toppings]:checked").each(function() {
-  toppings.push($(this).val());
+    toppings.push($(this).val());
   });
 }
 
 function fadeFunction(selector, pizzaObject) {
-  return function () {
+  return function() {
     $(selector).text("Your Pizza costs: " + pizzaObject.cost + "$").fadeIn("slow");
   }
 }
@@ -34,8 +34,8 @@ $(document).ready(function() {
   $("#pizzaOrder").submit(function(event) {
     event.preventDefault();
     let size = $("#size").val();
-    let newPizza = new Pizza(size);
     let toppings = [];
+    let newPizza = new Pizza(size);
     toppingsArray(toppings);
     newPizza.addToppings(toppings);
     newPizza.costCalculator();
