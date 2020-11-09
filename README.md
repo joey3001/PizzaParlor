@@ -22,7 +22,7 @@ This application will take user input through a form and generate unique respons
 | Should add 5 to the cost of the Pizza if the size of the Pizza is "Large" | newPizza.size="Large" | 10 | 
 | Should add 5 to the cost of the Pizza if more than 1 topping is selected | newPizza.toppings.length > 1 | 10 | 
 | fadeFunction |||
-| Should return a function that executes the fadeIn method on text associated with a specified selector & object. | selector, pizzaObject | ƒ () { $(selector).text(pizzaObject.cost).fadeIn(); }) |
+| Should return a function that executes the fadeIn method on text associated with a specified selector & object. | selector, pizzaObject | ƒ () { $(selector).text(pizzaObject.cost).fadeIn(); } |
 
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
