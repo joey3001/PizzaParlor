@@ -20,9 +20,7 @@
 | Should add 5 to Pizza.cost if Pizza.size = "large" | Pizza.size="large" | 10 | 
 | Should add 5 to Pizza.cost if Pizza.toppings.length > 1 | Pizza.toppings.length > 1 | 10 | 
 | fadeFunction|||
-| Should return a function that executes the fadeIn method on text associated with a specified selector & object. | Selector, Object | ƒ () {
-    $(selector).text(pizzaObject.cost).fadeIn();
-  }) |
+| Should return a function that executes the fadeIn method on text associated with a specified selector & object. | Selector, Object | ƒ () { $(selector).text(pizzaObject.cost).fadeIn(); }) |
 
 ## Setup/Installation Requirements
 #### If you have difficulty following any of the steps/instructions listed below, please contact me at josephnero111@gmail.com 
