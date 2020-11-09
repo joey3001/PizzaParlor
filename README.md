@@ -1,6 +1,6 @@
 # Joe's Pizza Parlor
 
-#### This applciation uses objects & prototypes to evaluate the cost of a Pizza based on user input. 
+#### This application uses objects & prototypes to evaluate the cost of a Pizza based on user input. 
 
 #### By Joseph Nero 
 
