@@ -8,7 +8,6 @@
 
 This application will take user input through a form and generate unique responses based on that input. Checkboxes are used within the form to help gather user input. The user input is then used to create an object, and the values of the object's keys are updated with prototypes based on user input. Ultimately, this application will generate the cost of a pizza based on the user's input of toppings & pizza size. Test specs are listed in the table below. More detailed test specs can be found at the following location: tests/scripts.test.js. 
 
-
 | Test | Input | Output |
 | :--------------------------- | :------------------------| :---------------- | 
 | Pizza|||
